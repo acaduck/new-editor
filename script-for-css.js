@@ -28,3 +28,4 @@ cssVars({
     // Update <code> tag with CSS result
     outElm.textContent = cssText;
   }
+)
