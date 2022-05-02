@@ -2,7 +2,7 @@ $(function(){
     var loggedIn = $(".user-info-pc")
     const emptyMessage = '目前没有消息';
     const notice = document.querySelector("#notifications");
-    const notifyIcon = $("#notify-icon");
+    const notifyIcon = $("#notification-icon");
 
     function CheckNotifications(){
         if (loggedIn.length>0){
@@ -10,7 +10,7 @@ $(function(){
                 .then(response => response.text())
                 .then(data => {
                     if(data.indexOf(emptyMessage) === -1){
-                       notifyIcon.classList.add('notification-danger');
+                       notifyIcon.setAttribute('fill','#db786a');
                     }
                 })
                 .catch((error) =>{
@@ -18,8 +18,7 @@ $(function(){
                 })
         }
     }
-
-    CheckNotifications(); //  页面加载时执行
+    CheckNotifications(); 
 
     tippy(notice,{
         allowHTML:true,
@@ -46,32 +45,20 @@ $(function(){
             instance.setContent('加载中...');
         }
     });
-
-
     if (loggedIn.length>0){
-        // websocket链接，使用wss(https)或者ws(http)
         const ws_scheme=window.location.protocol === 'https:' ? 'wss' : 'ws';
         const ws_path = ws_scheme + "://" + window.location.host + "/ws/notifications/";
 
         const ws = new ReconnectingWebSocket(ws_path);
 
-        //监听后端发送过来的消息
         ws.onmessage = function(event){
             const data = JSON.parse(event.data);
             switch(data.key){
                 case 'notification':
-                    if (currentUser !== data.actor_name){ //排除用户自己
+                    if (currentUser !== data.actor_name){ 
                         notifyIcon.addClass('notification-danger');
                     }
                     break;
-
-                // case "social_update":
-                //     if (currentUser !== data.actor_name){ //排除用户自己
-                //         notifyIcon.addClass('notification-danger');
-                //     }
-                //
-                //     break;
-
                 default:
                     console.log('error', data);
                     break;
