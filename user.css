@@ -1,0 +1,75 @@
+.flex-item{
+    margin:5px;
+    font-size:14px;
+}
+.d-flex-column{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content: center;
+    }
+.relative{
+    position:relative;
+}
+.user-edit{
+    z-index:10;
+    position:absolute;
+    top:0;
+    right:0;
+}
+.option-column{
+    margin-right:24px;
+    min-width:164px;
+}
+.detail-column{
+    flex:1 0 auto;
+}
+.option-column h3,.detail-column h3{
+    font-size:15px;
+    font-weight:bold;
+    margin-top:24px;
+}
+.option-column,.detail-column {
+    font-size:14px;
+}
+.single-user-data{
+    display:flex;
+    flex-wrap:wrap;
+    border: 1px solid #e4e6e8;
+    border-radius: 3px;
+    padding:12px;
+}
+.single-data-item{
+    flex-basis: 50%;
+    padding:5px;
+}
+.about-user{
+    border: 1px solid #e4e6e8;
+    padding:12px;
+    border-radius:3px;
+}
+.timeline{
+    border: 1px solid #e4e6e8;
+    padding:12px;
+    border-radius:3px;
+}
+.q-grid{
+    border:none;
+}
+.description-key{
+    color:#bbc0c4;
+}
+.user-profile{
+    margin-right:24px;
+}
+.account-info{
+    border: 1px solid #e4e6e8;
+    padding:12px;
+    border-radius:3px;
+}
+.account-info legend{
+    font-size:13px;
+    font-style:italic;
+    color:#bbc0c4;
+    width:65px;
+}
