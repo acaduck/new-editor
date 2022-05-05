@@ -46,26 +46,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     }
     toggleLocation()
-    // const pageType = document.querySelector("#std-general-container")
-    // if (pageType) {
-    //     if (pageType.classList.contains("home-page")) {
-    //         console.log('true');
-    //         document.querySelector('.location1').classList.add('std-here');
-    //     } else if (pageType.classList.contains("question-page")) {
-    //         document.querySelector('.location2').classList.add('std-here');
-    //     } else if (pageType.classList.contains("tag-page")) {
-    //         document.querySelector('.location3').classList.add('std-here');
-    //     } else if (pageType.classList.contains("users-page")) {
-    //         document.querySelector('.location4').classList.add('std-here');
-    //     } else if (pageType.classList.contains("job-page")) {
-    //         document.querySelector('.location5').classList.add('std-here');
-    //     }
-    // }
-
-    document.querySelector('.close').addEventListener('click', () => {
-        document.querySelector(".alert-success").style.display = 'none';
-    })
-
 
     var currentUrl = window.location.href;
     if (currentUrl.includes("?next=")) {
