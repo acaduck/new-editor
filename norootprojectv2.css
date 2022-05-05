@@ -725,7 +725,7 @@ header {
 .std-question-title a,
 .related_question a {
     text-decoration: none;
-    color: #3FABC4;
+    color: #212529;
 }
 
 .std-question-title a {
@@ -910,12 +910,12 @@ textarea[name="comment"] {
 
 .std-tag-link {
     text-decoration: none !important;
-    color: #9cc3db !important;
+    color: #0056b3;
 }
 
 .std-tag-link:hover {
     text-decoration: none;
-    color: #9cc3db;
+    color: #0056b3;
 }
 li > code,
 p > code,
