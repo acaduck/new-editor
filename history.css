@@ -1,0 +1,103 @@
+tr {
+  text-align: left;
+}
+
+input[type=submit] {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.1em 0.6em;
+  font-size: 11px;
+  line-height: 1.5;
+  background-color: #e3e6e8;
+  border: 1px solid #9fa6ad;
+  color: #232629;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(12, 13, 14, 0.15), inset 0 1px 0 0 white;
+  overflow-wrap: break-word;
+}
+
+thead th {
+  padding: 4px 6px;
+}
+
+table {
+  width: 100%;
+}
+table tr {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+tbody {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 13px;
+}
+tbody th, tbody td {
+  font-weight: normal;
+  padding: 4px 6px;
+}
+
+input[type=radio i] {
+  background-color: #1a8917;
+  cursor: default;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 0px 5px;
+  padding: initial;
+  border: initial;
+}
+
+pre.highlight {
+  max-width: 900px;
+  white-space: pre-line;
+}
+
+pre {
+  font-size:14px;
+  word-break: break-all;
+  padding: 12px;
+  border-radius: 3px;
+  background: #f0f0f0;
+}
+
+del {
+  padding:2px 4px;
+  background-color: lightpink;
+  color:red;
+  text-decoration:line-through;
+}
+
+ins {
+  padding:2px 4px;
+  background-color: hsl(140,40%,85%);
+  color:green;
+  text-decoration:none;
+}
+
+sup.follow {
+  color: #5555ff;
+}
+
+.follow {
+  display: none;
+}
+
+.history-container li {
+  list-style-type: none;
+  display: inline-block;
+}
+.history-container li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.1em 0.6em;
+  font-size: 11px;
+  line-height: 1.5;
+  background-color: #e3e6e8;
+  border: 1px solid #9fa6ad;
+  color: #232629;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(12, 13, 14, 0.15), inset 0 1px 0 0 white;
+}
+
+/*# sourceMappingURL=history.css.map */
