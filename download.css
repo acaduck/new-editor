@@ -1,0 +1,27 @@
+.download-button {
+  color: green;
+  text-decoration: none;
+  background: linear-gradient(#e2ece1, #d6e1d1);
+  padding: 10px 6px;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 #fff, inset 0 0 0 1px rgba(244, 247, 197, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+.download-button:hover {
+  text-decoration: none;
+  color: green;
+}
+
+.download-box {
+  border-top: 1px dashed green;
+  padding: 24px 0;
+}
+
+.download-declare {
+  padding: 10px 0;
+}
+
+/*# sourceMappingURL=download.css.map */
