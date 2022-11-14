@@ -1,0 +1,283 @@
+html, body {
+  overflow: hidden;
+}
+
+.doc-theme {
+  height: 100%;
+}
+
+.docs-container {
+  display: flex;
+  padding: 24px 0;
+  column-gap: 24px;
+}
+
+.doc-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.doc-card {
+  width: 300px;
+  border-radius: 6px;
+}
+.doc-card h4 {
+  margin: 12px 0;
+}
+.doc-card h4 a {
+  text-decoration: none;
+  color: #242729;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.doc-introduction {
+  font-size: 14px;
+  color: #242729;
+}
+
+.doc-image {
+  width: 100%;
+  border-radius: 10px;
+  height: 160px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.left-column {
+  width: 250px;
+  flex: 0 0 250px;
+  position: relative;
+  height: 100%;
+  background-color: #f5f6f8;
+  border-right: 1px solid #e3e5e8;
+  padding-top: 10px;
+}
+.left-column:before {
+  content: " ";
+  display: block;
+  margin-inline-start: -100%;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: #f5f6f8;
+  z-index: -1;
+  right: 100%;
+}
+.left-column a {
+  text-decoration: none;
+  color: #888888;
+}
+
+.left-column-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.section-title {
+  margin-bottom: 2px;
+  padding: 4px 0;
+}
+.section-title:hover {
+  background: #e3e5e8;
+}
+.section-title a {
+  font-size: 14px;
+  padding: 0 4px;
+  display: block;
+}
+
+.center-column {
+  flex: 1 0 auto;
+  height: 100%;
+  display: flex;
+  max-width: 714px;
+  flex-direction: column;
+}
+
+.render-content {
+  padding: 15px 30px;
+  height: 100%;
+  position: relative;
+  overflow-y: auto;
+}
+.render-content table {
+  width: 100%;
+}
+.render-content table th {
+  border-top: 2px solid black;
+  border-bottom: 1px solid #cccccc;
+}
+.render-content table tr {
+  border-bottom: 1px solid #cccccc;
+}
+
+.render-content::-webkit-scrollbar,
+.left-column-content::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.render-content::-webkit-scrollbar-thumb,
+.left-column-content::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.render-content::-webkit-scrollbar-corner,
+.left-column-content::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.doc-footer {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888888;
+}
+.doc-footer a {
+  color: #888888;
+}
+.doc-footer a:hover {
+  text-decoration: none;
+  color: #5eba7d;
+}
+
+.right-column {
+  width: 300px;
+  flex: 0 0 300px;
+  height: 100%;
+  padding-top: 10px;
+}
+
+.doc-name {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 22px;
+  color: #2e3338;
+  justify-content: space-between;
+}
+.doc-name a {
+  color: #2e3338;
+}
+
+h1 {
+  color: #2e3338;
+}
+
+.is-active {
+  background: #e3e5e8;
+  margin-right: -1px;
+}
+
+.add-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.add-section:focus,
+.add-button:focus {
+  outline: none;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.section-form {
+  display: none;
+  border-radius: 3px;
+}
+
+#add-folder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#addFileForm,
+#addFolderForm {
+  display: none;
+  padding: 6px;
+  background: #cccccc;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#addFileForm input,
+#addFolderForm input {
+  width: 100%;
+}
+#addFileForm input:focus,
+#addFolderForm input:focus {
+  outline: none;
+}
+
+.folder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.folder-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.doc-name {
+  margin-bottom: 24px;
+}
+
+.file-name {
+  font-size: 13px;
+}
+
+.nav-icon {
+  margin-right: 5px;
+}
+
+.open {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rotated {
+  transform: rotate(90deg);
+}
+
+.children {
+  display: none;
+}
+
+.create-button {
+  margin: 10px 0 5px 0;
+}
+.create-button button {
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+.create-button button:focus {
+  outline: none;
+}
+.create-button button:hover {
+  background: #fff;
+}
+
+/*# sourceMappingURL=docs.css.map */
